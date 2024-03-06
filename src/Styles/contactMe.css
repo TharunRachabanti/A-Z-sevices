@@ -1,0 +1,93 @@
+.contact-me-container {
+  text-align: center;
+  /* border: 2px solid red; */
+  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: "Titillium Web", sans-serif; */
+}
+
+.contact-methods {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  margin: 0 auto; /* Center horizontally */
+  padding: 20px;
+  max-width: 600px; /* Limit maximum width */
+  margin-bottom: 50px;
+}
+.contact-methods a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.single-contactme-link {
+  margin-right: 50px;
+}
+
+.contact-methods a:hover {
+  color: #007bff;
+}
+.contact-methods-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.contact-methods-row a {
+  flex-basis: calc(
+    50% - 10px
+  ); /* Adjust width to occupy half of the container */
+}
+
+.contact-methods-row a:first-child {
+  margin-right: 10px; /* Add spacing between items */
+}
+
+.icons {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px; /* Add spacing between icon and text */
+}
+
+.contact-methods span {
+  font-size: 16px;
+}
+
+.youtube {
+  color: red;
+}
+
+.phone {
+  color: blue;
+}
+
+.wathsapp {
+  color: green;
+}
+
+.facebook {
+  color: #3b5998;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-methods {
+    width: 80%; /* Adjust width for smaller screens */
+  }
+
+  .contact-methods-row {
+    display: block; /* Change to block layout for smaller screens */
+  }
+
+  .contact-methods-row a {
+    flex-basis: auto; /* Reset width for column layout */
+    margin-right: 0; /* Remove margin between items */
+  }
+
+  .single-contactme-link {
+    margin-right: 0; /* Reset margin for single links */
+  }
+}

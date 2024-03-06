@@ -1,0 +1,73 @@
+.explanation {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  margin: 0 auto;
+  width: 60%;
+  /* border: 2px solid red; */
+  padding: 10px;
+}
+
+.our-services-heading {
+  font-size: 40px;
+  color: #8cc5d7;
+  -webkit-text-stroke: 1px black;
+}
+
+.explanation h3 {
+  font-size: 25px;
+}
+
+.explanation p {
+  text-align: center; /* Center text horizontally within <p> */
+  margin-bottom: 40px; /* Remove default margin */
+  /* Additional styles for the <p> element */
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  /* font-size: 16px; */
+  line-height: 25px;
+}
+
+.text-with-arrow {
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-bottom: 50px;
+}
+
+.text-with-arrow h3 {
+  margin-right: 10px; /* Add space between text and arrow */
+}
+.text-with-arrow img {
+  height: 50px;
+  width: 200px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .explanation {
+    width: 90%;
+    /* border: 2px solid red; */
+    padding: 10px;
+  }
+
+  .explanation h3 {
+    font-size: 15px;
+  }
+
+  .explanation p {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-size: 16px; */
+    line-height: 25px;
+  }
+
+  .text-with-arrow img {
+    height: 30px;
+    width: 100px;
+  }
+}

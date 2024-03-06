@@ -1,0 +1,51 @@
+/* contactMe.css */
+
+.youtube-Display-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.youtube-container p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.youtube-container {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 80%;
+  margin: 0 auto;
+  /* border: 2px solid green; */
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.youtube-video-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
+}
+
+.youtube-video-row {
+  /* border: 2px solid #8cc5d7; */
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.youtube-video-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.youtube-video-container iframe {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .youtube-video-row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

@@ -1,0 +1,141 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 8px;
+
+  background-image: linear-gradient(
+    to bottom,
+    #a0a0a0,
+    #69cfcf,
+    #358e8e
+  ); /* Gradient with three colors */
+
+  background-size: cover;
+  height: 250px;
+  width: 200px; /* Adjust the width as needed */
+  border-radius: 10%;
+  flex-direction: column;
+  margin-left: 10px; /* space between each container*/
+  margin-bottom: 10px;
+
+  position: relative;
+}
+
+#our-services {
+  margin-bottom: 10px;
+}
+
+#containerImage {
+  height: 30%;
+  width: 50%;
+  border-radius: 50%;
+  /* margin-right: 15px; */
+  justify-content: center;
+  /* Adjust the spacing between image and text */
+}
+
+.container-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text content */
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.text-container p {
+  padding-left: 5px;
+  padding-right: 5px;
+  font-family: "Alfa Slab One", sans-serif;
+
+  line-height: 35px;
+  /* letter-spacing: 0.15em; */
+
+  text-align: justify;
+  font-size: var(--font-size, 30px);
+  font-weight: 500;
+  color: #007055; /* Set text color */
+  /* Gradient with three colors */
+  margin: 0; /*Remove default margin */
+
+  overflow: hidden; /* Hide any overflow */
+}
+
+.text p {
+  display: flex;
+}
+
+.text-container button,
+.contact-scroll-button {
+  font-family: "Bevan", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 20px;
+  border: 0px solid #58bae4;
+  background-size: contain; /* Fit the image into the button container */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  background-position: center; /* Center the image */
+  border-radius: 30px;
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, #58bae4, #4a6b79, #39c3c3);
+  cursor: pointer;
+  text-decoration: none;
+  /* display:flex; */
+  /* margin-left: 15px; */
+  justify-content: center;
+  /* transition: background-color 0.3s, color 0.3s, border-color 0.3s; */
+}
+
+.text-container button,
+.contact-scroll-button:hover {
+  /* background-color: #000000; */
+  color: #fff;
+}
+
+/* here */
+
+.additional-info {
+  display: none;
+  position: absolute;
+  top: calc(10%); /* Position it just below the container */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%);
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* semi-transparent white background */
+  border: 2px solid #007055; /* border color */
+  border-radius: 5px;
+  padding: 10px;
+  width: 200px; /* Adjust width as needed */
+  z-index: 1; /* Ensure it's above the container */
+  text-align: left; /* Align text to the left */
+}
+
+.container:hover .additional-info {
+  display: block;
+}
+
+.additional-info ul {
+  list-style: none; /* Remove default list styles */
+  counter-reset: list-counter; /* Reset the counter for numbering */
+}
+
+.additional-info li {
+  counter-increment: list-counter; /* Increment the counter for each list item */
+}
+
+.additional-info li::before {
+  content: counter(list-counter) ". "; /* Display the counter number followed by a period */
+  font-weight: bold; /* Optionally make the numbers bold */
+  margin-right: 5px; /* Add some space between the number and the text */
+}
